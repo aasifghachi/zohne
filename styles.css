@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+  html,body {
+  background-image: linear-gradient(326deg, #9edcf5 0%, #ebfbff 74%);
+  scroll-behavior: smooth;
+  height:auto;
+  background-repeat: repeat-y;
+}
+
+header{
+  padding-top:0;
+  padding:0;
+  margin:0;
+} 
+
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index :11;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+nav ul {
+  text-align: center;
+  background-color: #000000;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgb(252, 252, 252);
+  font-size: 1.5vw;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(169, 235, 255, 0.856);
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+h1 {
+    margin-top: 8%;
+    margin-left:15px;
+    padding:8%;
+    text-shadow: 2px 2px 4px #63c6ff;
+    text-align:center;
+    letter-spacing:1px;
+    border: 8px groove black;
+    border-radius:8px;
+    color: rgb(0, 0, 0);
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3vw;
+}
+.guidetext {
+    padding:3%; 
+    text-align: center;
+    padding-left: 30px;
+    font-family:verdana;
+    color:rgb(131, 205, 255);
+    font-size:1.5vw; 
+}
+.mobileimg {
+width:70%; 
+height:auto; 
+border-radius:15px;
+}
+@media screen and (max-width: 800px) {
+  .mobileimg {
+   float:initial;
+   margin:5%;
+   width:70%;
+  }
+}
+
+.btn {
+  margin:10px;
+  float: right;
+  border:1px solid white;
+  border-radius: 10px;
+  font-family: josefin sans; 
+  font-size:1.5vw;
+  color:rgb(0, 0, 0);
+  width: 15%;
+  height: 5%;
+  background-color: rgb(6, 197, 255);
+  padding:1%;
+  
+}
+
+.btn:hover {
+  box-shadow:8px 10px 10px 1px rgba(0, 0, 0, 0.09);
+  border:1px solid #000000;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  transition: color 200ms linear;
+}
+
+ .footer {
+   padding:10px;
+   background-color:black;
+ }
+
+
+.analysistext {
+  margin-right:3%;
+  margin-top:15%;
+  border-radius:8px;
+  background-color: #9edcf5;
+  text-shadow:1px #121212;
+  font-family:Georgia ;
+  font-size:3vw;
+  text-align:center;
+  padding:10% 5% 10%;
+  color:black;
+ }
+ @media screen and (max-width: 800px) {
+  .mobileimg {
+   float:initial;
+   margin:5%;
+   width:50%;
+  }
+}
+   
+.fab  {
+  color:black;
+  font-size:50px;
+  padding:6px;
+  text-decoration:none;
+ }
+ 
+.fab:hover {
+   color:#9b44ff;
+   transition: color 200ms linear;
+ }
+
+
+ .services {
+ margin:0;
+ padding:0;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ font-family:Arial, Helvetica, sans-serif;
+ }
+
+
+ .trading, .investment, .mentoring {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     margin:50px;
+     height:100%;
+     color:#ffffff;
+     align-items: stretch;
+   }
+     
+
+.query {
+   margin-left:2%;
+   color:rgb(0, 0, 0);
+   max-width:300px;
+   font-size:30px;
+}
+
+ form {
+   box-shadow: 5px 15px 20px 5px rgb(0, 0, 0 0.09);
+   margin-left:2%;
+   padding:15px;
+   background-color: aliceblue;
+   border-radius: 8px;
+ }
+ .supportimg {
+ float: right; border-radius: 15px;
+     margin-right:20px;
+    }
+ @media screen and (max-width: 800px) {
+  .supportimg {
+   float:initial;
+   margin:5%;
+   width:50%;
+ }
+ }
+.textareaform {
+  width:70%;
+  height:25%;
+  text-align: left;
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:10px;
+  box-shadow: 5px 10px 25px 5px rgb(0, 0, 0, 0.09);
+ }
+
+ .phone,.name,.email {
+  padding:10px;
+  margin:5px;
+  border:0;
+  border-radius:10px;
+  box-shadow:5px 10px 25px 5px rgba(0, 0, 0,0.09);
+
+ }
+
+.submitform {
+   font-size:1.5vw;
+   cursor:pointer;
+   min-width:20%;
+   padding:2%;
+   background-color: #93e0ff;
+   color:rgb(0, 0, 0);
+   box-shadow:5px 10px 25px 5px rgba(0, 0, 0,0.09);
+   border-radius:15px;
+ }
+
+ .submitform:hover {
+   color:#ffffff;
+  transition: color 200ms linear;
+ }
