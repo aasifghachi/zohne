@@ -39,6 +39,7 @@ a {
 .navbar{
   height:70px;
 background-color: var(--primary);
+animation: slideinfromtop 0.7s ease-in;
 }
 
 .navbar ul {
@@ -70,6 +71,10 @@ background-color: var(--primary);
   gap: 50px;
 }
 
+.section1text, .form2 {
+  animation: slideinfromleft 0.7s ease-in;
+}
+
 .section1 h1 {
   font-size: 50px;
 }
@@ -77,6 +82,10 @@ background-color: var(--primary);
 .section1 p{
   font-size: 20px;
   margin: 30px 0;
+}
+
+.section1image, .supportimage {
+animation: slideinfromright 0.7s ease-in;
 }
 
 .btn1{
@@ -237,6 +246,7 @@ grid-template-columns: 2fr 1fr;
   transition: color 200ms linear;
   -ms-transform-origin-y: (1);
 }
+
 footer {
   padding:10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -245,6 +255,42 @@ footer {
   text-align: center;
   color: #ffffff;
   height: 60px;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    transform: translateX(-100%) ; 
+  }
+100% {
+  transform: translateX(0%); 
+  }
+}
+
+@keyframes slideinfromright {
+  0% {
+    transform: translateX(100%) ; 
+  }
+100% {
+  transform: translateX(0%); 
+  }
+}
+
+@keyframes slideinfromtop {
+  0% {
+    transform: translatey(-100%) ; 
+  }
+100% {
+  transform: translateX(0%); 
+  }
+}
+
+@keyframes slideinfrombottom {
+  0% {
+    transform: translateX(100%) ; 
+  }
+100% {
+  transform: translateX(0%); 
+  }
 }
 
 @media (max-width:768px) {
